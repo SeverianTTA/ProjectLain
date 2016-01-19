@@ -1,15 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+namespace StartMenu
+{
 public class MenuScript : MonoBehaviour {
 
 	// Use this for initialization
-	void Start () {
+		void ChangeToScene(int sceneToChangeTo)
+		{
+
+
+		}
 	
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
 	}
-}
