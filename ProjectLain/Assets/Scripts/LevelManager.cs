@@ -1,21 +1,53 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine.SceneManagement;
+using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 namespace StartMenu
 {
 	
 public class LevelManager : MonoBehaviour {
-
-	public void LoadScene(string name)
-	{
-		Application.LoadLevel (name);
-	}
-
-
-//		need to set name property
-//		public void SelectScene(string name)
+		public InputField iField;
+		public string scene;
+//		public void onClick()
 //		{
-//			Application.
+//			string sceneChoice = UserImput ();
+//			Application.LoadLevel (sceneChoice);
+//
 //		}
+//
+//
+//
+//
+//		string UserImput()
+//		{
+//			InputField userField;
+//
+//
+//			string scene = userField.text;
+//			return scene;
+//		
+//		}
+//
+//
+
+
+
+
+
+
+
+
+
+
+		public void SelectScene()
+	{
+			
+
+			string scene = iField.text;	
+
+			SceneManager.LoadScene(scene);
+		}
 
 
 	public void ExitGame()
